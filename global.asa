@@ -1,0 +1,14 @@
+<script language="VBScript" runat="Server">
+Sub Application_OnStart
+Application("AllowedErrorsBeforeWarning") = 3
+End Sub
+Sub Session_OnStart
+Session("ErrorCount") = 0
+End Sub
+Sub Session_OnEnd
+'Nothing to do here...
+End Sub
+Sub Application_OnEnd
+'Nothing to do here...
+End Sub
+</script>
